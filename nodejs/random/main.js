@@ -8,15 +8,15 @@
 
 // module.exports.add = add
 
-// const path = require('path')
-// const os = require('os')
+const path = require('path')
+const os = require('os')
 
-// let obj = {
-//     root: '/ignored',
-//     dir: '/home/user/dir',
-//     base: 'file.txt'
-// }
-// console.log(path.format(obj))
+let obj = {
+    root: '/ignored',
+    dir: '/home/user/dir',
+    base: 'file.txt'
+}
+console.log(path.format(obj))
 
 // console.log(path.basename(__filename))
 
