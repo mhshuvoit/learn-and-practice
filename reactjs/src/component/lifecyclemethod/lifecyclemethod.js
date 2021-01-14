@@ -15,6 +15,7 @@ class WillUnmount extends Component {
     }
 }
 
+
 class Lifecyclemethod extends Component {
     constructor() {
         super()
@@ -27,41 +28,40 @@ class Lifecyclemethod extends Component {
         this.btnRef = React.createRef()
     }
 
-    componentDidMount(prevProps, prevState, snapshot) {
-        // console.log('I am from componentD')
-        // console.log('from compoD', this.divRef)
-    }
+    // componentDidMount(prevProps, prevState, snapshot) {
+    //     // console.log('I am from componentD')
+    //     console.log('from compoD', this.divRef.current)
+    // }
 
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        // console.log(snapshot)
-    }
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     console.log(snapshot)
+    // }
 
     // static getDerivedStateFromProps(props, state) {
-    //   if (props.count !== state.count) {
-    //     return { count: props.count }
-    //   }
-    //   return null //('jodi state change na hoy')
+    //     if (props.count !== state.count) {
+    //         return { count: props.count }
+    //     }
+    //     return null //('jodi state change na hoy')
     // }
 
     // shouldComponentUpdate(nextProps, nextState) {
-    //   return nextState.count <= 5
+    //     return nextState.count <= 5
     // }
 
-    getSnapshotBeforeUpdate(prevProps, prevState) {
-        const btn = this.btnRef.current
-        // console.dir(btn)
-        return btn.offsetTop || null
-    }
+    // getSnapshotBeforeUpdate(prevProps, prevState) { // age ki silo seta janar jonno.
+    //     const btn = this.btnRef.current
+    //     console.dir(btn)
+    //     return btn.offsetTop || null
+    // }
 
     render() {
         // console.log('I am from render')
         // console.log(this.divRef)
-
         return (
             <div ref={this.divRef}>
                 {this.state.name}
                 {this.state.count}
-                {this.state.count % 2 === 0 && <WillUnmount />}
+                {/* {this.state.count % 2 === 0 && <WillUnmount />} */}
                 <button onClick={() => this.setState({ count: this.state.count + 1 })}
                     ref={this.btnRef}
                 >button</button>

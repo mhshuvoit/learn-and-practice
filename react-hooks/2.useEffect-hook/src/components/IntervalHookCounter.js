@@ -13,8 +13,8 @@ function IntervalHookCounter() {
     return () => {
       clearInterval(interval)
     }
-  // }, [count])
-}, [])
+  }, [count])
+// }, [])
 
   return (
     <div>

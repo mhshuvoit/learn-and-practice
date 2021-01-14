@@ -1,4 +1,35 @@
-import React from 'react'
+import React, { Component } from 'react'
+
+// import Form from './component/Form'
+
+// class App extends React.Component {
+//   state = {
+//     users: []
+//   }
+
+//   createUser = user => {
+//     user.id = new Date().getTime().toString()
+//     this.setState({
+//       users: [...this.state.users, user]
+//     })
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <Form users={this.createUser} />
+//         {this.state.users.map(user => (
+//           <ul
+//             key={user.id}>
+//             <li>{user.email}</li>
+//           </ul>
+//         ))}
+
+//       </div>
+//     )
+//   }
+// }
+
+// export default App
 
 // import Hook from './component/Hook/App'
 
@@ -13,34 +44,40 @@ import React from 'react'
 // import Lifecyclemethod from './component/lifecyclemethod/lifecyclemethod'
 
 //style
-import Style from './component/style/inline.js'
+// import Style from './component/style/inline.js'
+
+// import Uncontrolled from './component/uncontrolForm'
+
 
 // import Router from './component/react-router'
-function App() {
-  return (
-    <div className="App">
-      {/* <Hook/> */}
-      {/* react-component-tree-props-passing */}
-      {/* <DadaProvider value = "Dada send love for Puti"> */}
-      {/* <Son name={"Puti name is salam"}></Son> */}
-      {/* <Son/>
+// function App() {
+//   return (
+//     <div className="App">
+{/* <Hook/> */ }
+{/* react-component-tree-props-passing */ }
+{/* <DadaProvider value = "Dada send love for Puti"> */ }
+{/* <Son name={"Puti name is salam"}></Son> */ }
+{/* <Son/>
       </DadaProvider> */}
 
-      {/* route-with-url-params  */}
-      {/* <Router/> */}
+{/* route-with-url-params  */ }
+{/* <Router/> */ }
 
-      {/* <Lifecyclemethod/> */}
-      {/* <Lifecyclemethod count={100}/> */}
+{/* <Lifecyclemethod/> */ }
+{/* <Lifecyclemethod count={100}/> */ }
 
-      {/* <Router/> */}
+{/* <Router/> */ }
 
-      {/* Style */}
-      <Style />
-    </div>
-  )
-}
+{/* Style */ }
+{/* <Style /> */ }
 
-export default App
+{/* <Uncontrolled/> */ }
+
+// </div>
+//   )
+// }
+
+// export default App
 
 
 
@@ -68,34 +105,36 @@ export default App
 
 // import React, { Component } from 'react'
 
-// class Check extends Component {
+// class Check extends React.Component {
 
 //   render() {
-// console.log(this)
+//     console.log(this)
 
 //     this.props.func(this)
 //     return <h2>I am check</h2>
 //   }
 // }
 
-// class App extends Component {
-//   state={count: 0}
-//   // getContext(context) {
-//   //   console.log(context)
-//   // }
+// class App extends React.Component {
+//   state = { count: 0 }
+//   getContext(context) {
+//     console.log(context)
+//   }
 //   // count = 0
 //   render() {
 //     // console.log(this)
 //     return (
 //       <div>
 //         {/* {this.props} */}
-//         {/* <h1>Hi this is props</h1>
-//         <Check func={this.getContext} /> */}
+//         <h1>Hi this is props</h1>
+//         <Check func={this.getContext} />
 //         {/* <button onClick={()=> {this.count ++; console.log(this.count)}}
-//         >{this.count}</button> */}
-//          <button onClick={()=> {this.setState({count: this.state.count +1 })
-//          console.log(this.state.count)}}
-//         >{this.state.count}</button>
+//         >{this.count}</button>
+//         <button onClick={() => {
+//           this.setState({ count: this.state.count + 1 })
+//           console.log(this.state.count)
+//         }}
+//         >{this.state.count}</button> */}
 //       </div>
 //     )
 //   }
@@ -110,6 +149,7 @@ export default App
 //   state = {
 //     count: 0
 //   }
+
 //   render() {
 //     console.log(this.state.count)
 //     return (
@@ -118,7 +158,7 @@ export default App
 //           return {
 //             count: prev.count + 1
 //           }
-//         }, () =>  console.log(this.state.count) )} >{this.state.count}</button>
+//         }, () => console.log(this.state.count))} >{this.state.count}</button>
 //       </div>
 //     )
 //   }
@@ -126,69 +166,6 @@ export default App
 
 // export default App
 
-
-// import React, { Component } from 'react'
-
-// class App extends Component {
-//   state = {
-//     count: 0
-//   }
-
-//   increment = () => {
-//     this.setState({ count: this.state.count + 1 })
-//   }
-
-//   decrement = () => {
-//     this.setState({ count: this.state.count - 1 })
-//   }
-
-//   intervalId = null
-
-//   startTime = () => {
-//     if (this.state.count > 0 && !this.intervalId) {
-//       this.intervalId = setInterval(() => {
-//         this.setState({ count: this.state.count - 1 }, () => {
-//           if (this.state.count === 0) {
-//             alert('Finished')
-//             clearInterval(this.intervalId)
-//           }
-//         })
-//       }, 1000)
-//     }
-//   }
-
-//   stopTimer = () => {
-//     if (this.intervalId) {
-//       clearInterval(this.intervalId)
-//       this.intervalId = null
-//     }
-//   }
-
-//   resetTimer = () => { 
-//     this.setState({count: 0})
-//     clearInterval(this.intervalId)
-//       this.intervalId = null
-//   }
-//   render() {
-//     return (
-//       <div className="container text-center">
-//          <button onClick={this.decrement}
-//         >-</button>
-//         <button onClick={this.increment}
-//         >+</button>
-//         <span>{this.state.count}</span>
-//         <button onClick={this.startTime}
-//         >Start</button>
-//         <button onClick={this.stopTimer}
-//         >stop</button>
-//         <button onClick={this.resetTimer}
-//         >reset</button>
-//       </div>
-//     )
-//   }
-// }
-
-// export default App
 
 
 // //four mehtod to style react app
@@ -196,3 +173,7 @@ export default App
 // // css class
 // // css module
 // // jss(styled component) css in js
+
+
+
+

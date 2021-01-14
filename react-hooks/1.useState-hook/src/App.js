@@ -11,11 +11,11 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				{/* <ClassCounter />
-				<ClassCounterTwo />
-				<HookCounter />
-				<HookCounterTwo />
-				<HookCounterThree /> */}
+				{/* <ClassCounter /> */}
+				{/* <ClassCounterTwo /> */}
+				{/* <HookCounter /> */}
+				{/* <HookCounterTwo /> */}
+				{/* <HookCounterThree /> */}
 				<HookCounterFour />
 			</div>
 		)

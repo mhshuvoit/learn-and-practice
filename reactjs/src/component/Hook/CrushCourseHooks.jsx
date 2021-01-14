@@ -1,25 +1,3 @@
-// import React, { useState } from 'react';
-
-// const Hook = () => {
-//     const [name, setName] = useState({
-//         country: 'Bangladesh'
-//     })
-
-//     const ChangeHandler = () => {
-//         setName({country:"India"})
-//     }
-//     return (
-//         <div>
-//             <h1>{name.country}</h1>
-//             {/* <button onClick={()=>setName({country:"America"})}>Click</button> */}
-//             <button onClick={ChangeHandler}>Click</button>
-//         </div>
-//     );
-// };
-
-// export default Hook;
-
-
 import React, { useState, useEffect, Fragment, useContext } from "react";
 // import { UserContext } from './userContext'
 
@@ -27,14 +5,14 @@ const Hook = () => {
     const [count, countName] = useState(100)
     const [age, countAge] = useState(26)
     const [post, setPost] = useState({})
-    // const { user } = useContext(UserContext)
+    const { user } = useContext(UserContext)
 
-    useEffect(() => {
-        console.log('Count:', count)
-        return () => {
-            console.log("unsubscribe")
-        }
-    }, [count])
+    // useEffect(() => {
+    //     console.log('Count:', count)
+    //     return () => {
+    //         console.log("unsubscribe") //componentwillunmount
+    //     }
+    // }, [count]) // if we provide empty array it will work like componentDidMount but kono array na dile componentdidUpdate.
 
     // dependecis kaz ta korse [count] dependecis er maddhome(ComponentWillreceiveprops)
 

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function HookCounterThree() {
 	const [name, setName] = useState({ firstName: '', lastName: '' })
+	
 	return (
 		<form>
 			<input
