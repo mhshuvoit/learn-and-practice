@@ -1,1 +1,1 @@
-This is not a project. Here I am just learning and practicing everything.
+This is not a project. Here I am just learning and practicing code.
