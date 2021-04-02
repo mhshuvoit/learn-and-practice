@@ -69,6 +69,7 @@ class fromHanding extends Component {
     }
 
     render() {
+        console.log(this.state.values)
         return (
             <div className="container">
                 <Form

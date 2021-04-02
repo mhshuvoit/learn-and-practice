@@ -15,19 +15,6 @@ class App extends Component {
 
     intervalId = null
 
-    //   startTime = () => {
-    //     if (this.state.count > 0 && !this.intervalId) {
-    //       this.intervalId = setInterval(() => {
-    //         this.setState({ count: this.state.count - 1 }, () => {
-    //           if (this.state.count === 0) {
-    //             alert('Finished')
-    //             clearInterval(this.intervalId)
-    //           }
-    //         })
-    //       }, 1000)
-    //     }
-    //   }
-
     startTime = () => {
         if (this.state.count > 0) {
             this.intervalId = setInterval(() => {

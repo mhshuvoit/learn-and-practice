@@ -1,0 +1,23 @@
+<%- include('../partials/header.ejs') %>
+    <%- include('../partials/nav.ejs') %>
+        <h1>
+            <%= title %>
+        </h1>
+        <%= new Date().toString() %>
+
+            <% if(post.published) {%>
+                <h1>Title: <%= post.title %>
+                </h1>
+                <h1>Body: <%= post.body %>
+                </h1>
+                <% } else {%>
+                    <h1>Post is not yet published</h1>
+                    <% } %>
+        <ul>
+            <% for(let p of posts){ %>
+                <li>
+                    <%= p.title %> and <%= p.body %>
+                </li>
+                <% } %>
+        </ul>
+<%- include('../partials/footer.ejs') %>

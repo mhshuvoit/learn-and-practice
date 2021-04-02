@@ -1,0 +1,39 @@
+/* grouping selector, decending selector, child selector */
+
+* {}
+
+.container {
+    background-image: linear-gradient(to right, red, green, blue, alpha);
+}
+
+
+/* univerged selector */
+
+div,
+p,
+h1 {
+    /* grouping selector*/
+}
+
+div p {
+    /* decending selector*/
+}
+
+div>p {
+    /* child selector */
+}
+
+div+p {
+    /*adjacent css */
+}
+
+div~p {
+    border: 1px solid #343434
+}
+
+
+/* tilde selector */
+
+
+/* we can use unicode for emoji  */
+

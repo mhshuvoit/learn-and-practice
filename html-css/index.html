@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- microsoft edge -->
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <style>
+        /* .container {
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(to right, red, green, blue, alpha);
+        } */
+        .box1 {
+            width: 500px;
+            background-color: blue;
+        }
+
+        .box2 {
+            width: 500px;
+            background-color: blue;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .list {
+            background-color: green;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .list ul {
+            /* list-style-type: circle;
+            list-style-position: inside;
+            list-style-image: url("tick.png");   */
+            list-style: none;
+
+        }
+
+        .list li{
+            color: #fff;
+        }
+
+        .list li::before {
+            color: #fff;
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            /* font-weight: bold; */
+        }
+        #sec1 {
+            float: left;
+            background-color: green
+        }
+        #sec2{
+            float: right;
+            background-color: orange
+        }
+        #sec3{
+            background-color: yellow;
+        }
+        #clear{
+            clear: both
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Heading -->
+    <h1>Heading</h1>
+    <h6>Heading</h6>
+    <div class="container">
+        <p>This is paragraph</p>
+    </div>
+    <!-- Style -->
+    <p style="font-size: 20px; color: #3434 34;">Lorem ipsum dolor sit amet, consectetur adipisicing elit distinctio
+        deserunt, sint quidem fugit saepe consectetur magni a aliquam odio expedita</p>
+
+    <!-- Formatting -->
+    <p>laudantium <ins>explicabo</ins> inventore <del>dolores</del> ut unde fugiat debitis et labore culpa harum</p>
+    <h2>H<sub>2</sub>0</h2>
+    <h2>a<sup>2</sup></h2>
+    <!-- superscript -->
+
+    <!-- Quotation And Citation -->
+    <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, doloribus?</blockquote>
+    <p><abbr title="Bangladesh">BD</abbr> is conutry</p>
+    <bdo dir="rtl">My name is Shuvo</bdo>
+    <br>
+    <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quam?</q>
+    <address>Kushtia Bangladesh</address>
+    <cite>Bangladesh</cite>
+    <!-- who is design this -->
+
+    <!-- div, h1 these are block elements -->
+
+    <!-- <iframe style="width:800px; height: 600px" src="https://mahamudulhasanshuvo.herokuapp.com"></iframe> -->
+
+    <fieldset>
+        <legend>Contact Us</legend>
+        <form>
+            <label for="contact">Contact Us</label>
+            <input type="text" id="contact">
+            <input type="range">
+            <input type="color">
+        </form>
+    </fieldset>
+    <!-- html entity character can be learn searching on web -->
+    <!-- html symbol character can be learn searching on web -->
+
+    <!-- Box sizing -->
+    <p class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illo laborum itaque esse,
+        deleniti aliquam illum voluptas nobis dignissimos quas molestiae rem atque sed, velit pariatur. Aperiam illum
+        mollitia veritatis!</p>
+
+    <p class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illo laborum itaque esse,
+        deleniti aliquam illum voluptas nobis dignissimos quas molestiae rem atque sed, velit pariatur. Aperiam illum
+        mollitia veritatis!</p>
+
+    <!-- List style -->
+    <div class="list">
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+            <li>react</li>
+        </ul>
+    </div>
+
+    <div id="sec1">
+        <h1>Bangladesh</h1>
+    </div>
+    <div id="sec2">
+        <h1>Pak</h1>
+    </div>
+    <div id="clear"></div>
+    <div id="sec3">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed distinctio aperiam assumenda earum aut, dolore voluptatem quibusdam molestias expedita odit!</h1>
+    </div>
+</body>
+
+
+</html>

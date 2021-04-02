@@ -1,35 +1,37 @@
 import React, { Component } from 'react'
 
-// import Form from './component/Form'
+import Form from './component/Form'
 
-// class App extends React.Component {
-//   state = {
-//     users: []
-//   }
+class App extends React.Component {
+  state = {
+    users: []
+  }
 
-//   createUser = user => {
-//     user.id = new Date().getTime().toString()
-//     this.setState({
-//       users: [...this.state.users, user]
-//     })
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <Form users={this.createUser} />
-//         {this.state.users.map(user => (
-//           <ul
-//             key={user.id}>
-//             <li>{user.email}</li>
-//           </ul>
-//         ))}
+  createUser = user => {
+    user.id = new Date().getTime().toString()
+    this.setState({
+      users: [...this.state.users, user]
+    })
+  }
 
-//       </div>
-//     )
-//   }
-// }
+  render() {
+    console.log(this.state.users)
+    return (
+      <div>
+        <Form users={this.createUser} />
+        {this.state.users.map(user => (
+          <ul
+            key={user.id}>
+            <li>{user.email}</li>
+          </ul>
+        ))}
 
-// export default App
+      </div>
+    )
+  }
+}
+
+export default App
 
 // import Hook from './component/Hook/App'
 

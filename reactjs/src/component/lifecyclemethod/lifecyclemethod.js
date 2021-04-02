@@ -33,9 +33,9 @@ class Lifecyclemethod extends Component {
     //     console.log('from compoD', this.divRef.current)
     // }
 
-    // componentDidUpdate(prevProps, prevState, snapshot) {
-    //     console.log(snapshot)
-    // }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log(snapshot)
+    }
 
     // static getDerivedStateFromProps(props, state) {
     //     if (props.count !== state.count) {
@@ -44,15 +44,15 @@ class Lifecyclemethod extends Component {
     //     return null //('jodi state change na hoy')
     // }
 
-    // shouldComponentUpdate(nextProps, nextState) {
-    //     return nextState.count <= 5
-    // }
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextState.count <= 5
+    }
 
-    // getSnapshotBeforeUpdate(prevProps, prevState) { // age ki silo seta janar jonno.
-    //     const btn = this.btnRef.current
-    //     console.dir(btn)
-    //     return btn.offsetTop || null
-    // }
+    getSnapshotBeforeUpdate(prevProps, prevState) { // age ki silo seta janar jonno.
+        const btn = this.btnRef.current
+        console.dir(btn)
+        return btn.offsetTop || null
+    }
 
     render() {
         // console.log('I am from render')
@@ -61,7 +61,7 @@ class Lifecyclemethod extends Component {
             <div ref={this.divRef}>
                 {this.state.name}
                 {this.state.count}
-                {/* {this.state.count % 2 === 0 && <WillUnmount />} */}
+                {this.state.count % 2 === 0 && <WillUnmount />}
                 <button onClick={() => this.setState({ count: this.state.count + 1 })}
                     ref={this.btnRef}
                 >button</button>

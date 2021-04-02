@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './component/lifecyclemethod/lifecyclemethod';
+import App from './component/Hook/App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App count={10} />
+    {/* <App count={10} /> */}
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
