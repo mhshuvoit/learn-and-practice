@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pStyle {
+  background: seagreen;
+  width: 75px;
+  height: 28px;
+  color: #fff;
+  margin: auto;
+  cursor: pointer;
+}
+
+.imgStyle {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 320px;
+}

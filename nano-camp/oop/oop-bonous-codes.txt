@@ -1,0 +1,1 @@
+class use kore object make korar onk way ase jemon GoF pattern - creational pattern

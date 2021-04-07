@@ -1,15 +1,17 @@
 const express = require('express')
 const morgan = require('morgan')
+const cors = require('cors')
 const mongoose = require('mongoose')
-const routes = require('./routes')
+const contactRoutes = require('./contactRoutes')
 
 const app = express()
 
 app.use(morgan('dev'))
+app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.use('/contact', routes)
+app.use('/contact', contactRoutes)
 
 // let testSchema = new mongoose.Schema({ // schema make a model
 //     name: String
